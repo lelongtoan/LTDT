@@ -31,54 +31,54 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //Product
 Route::get('Product/DanhSach', [SanPhamCtroller::class,'LayDanhSach']);
 Route::get('Product/{id}', [SanPhamCtroller::class,'find']);
-Route::get('Product/ThemMoi', [SanPhamCtroller::class,'create']);
-Route::get('Product/edit/{id}', [SanPhamCtroller::class,'edit']);
-Route::get('Product/delete/{id}', [SanPhamCtroller::class,'delete']);
+Route::post('Product/ThemMoi', [SanPhamCtroller::class,'create']);
+Route::patch('Product/edit/{id}', [SanPhamCtroller::class,'edit']);
+Route::delete('Product/delete/{id}', [SanPhamCtroller::class,'delete']);
 //Account
 Route::get('Account/DanhSach', [AccountController::class,'LayDanhSach']);
 Route::get('Account/{id}', [AccountController::class,'find']);
-Route::get('Account/ThemMoi', [AccountController::class,'create']);
-Route::get('Account/edit/{id}', [AccountController::class,'edit']);
-Route::get('Account/delete/{id}', [AccountController::class,'delete']);
+Route::post('Account/ThemMoi', [AccountController::class,'create']);
+Route::patch('Account/edit/{id}', [AccountController::class,'edit']);
+Route::delete('Account/delete/{id}', [AccountController::class,'delete']);
 //Category
 Route::get('Category/DanhSach', [CategoryController::class,'LayDanhSach']);
 Route::get('Category/{id}', [CategoryController::class,'find']);
-Route::get('Category/ThemMoi', [CategoryController::class,'create']);
-Route::get('Category/edit/{id}', [CategoryController::class,'edit']);
-Route::get('Category/delete/{id}', [CategoryController::class,'delete']);
+Route::post('Category/ThemMoi', [CategoryController::class,'create']);
+Route::patch('Category/edit/{id}', [CategoryController::class,'edit']);
+Route::delete('Category/delete/{id}', [CategoryController::class,'delete']);
 //Color
 Route::get('Color/DanhSach', [ColorController::class,'LayDanhSach']);
 Route::get('Color/{id}', [ColorController::class,'find']);
-Route::get('Color/ThemMoi', [ColorController::class,'create']);
-Route::get('Color/edit/{id}', [ColorController::class,'edit']);
-Route::get('Color/delete/{id}', [ColorController::class,'delete']);
+Route::post('Color/ThemMoi', [ColorController::class,'create']);
+Route::patch('Color/edit/{id}', [ColorController::class,'edit']);
+Route::delete('Color/delete/{id}', [ColorController::class,'delete']);
 //Order
 Route::get('Order/DanhSach', [OrderController::class,'LayDanhSach']);
 Route::get('Order/{id}', [OrderController::class,'find']);
-Route::get('Order/ThemMoi', [OrderController::class,'create']);
-Route::get('Order/edit/{id}', [OrderController::class,'edit']);
-Route::get('Order/delete/{id}', [OrderController::class,'delete']);
+Route::post('Order/ThemMoi', [OrderController::class,'create']);
+Route::patch('Order/edit/{id}', [OrderController::class,'edit']);
+Route::delete('Order/delete/{id}', [OrderController::class,'delete']);
 //OrderDetail
 Route::get('OrderDetail/DanhSach', [OrderDetailController::class,'LayDanhSach']);
 Route::get('OrderDetail/{id}', [OrderDetailController::class,'find']);
-Route::get('OrderDetail/ThemMoi', [OrderDetailController::class,'create']);
-Route::get('OrderDetail/edit/{id}', [OrderDetailController::class,'edit']);
-Route::get('OrderDetail/delete/{id}', [OrderDetailController::class,'delete']);
+Route::post('OrderDetail/ThemMoi', [OrderDetailController::class,'create']);
+Route::patch('OrderDetail/edit/{id}', [OrderDetailController::class,'edit']);
+Route::delete('OrderDetail/delete/{id}', [OrderDetailController::class,'delete']);
 //ProductDetail
 Route::get('ProductDetail/DanhSach', [ProductDetailController::class,'LayDanhSach']);
 Route::get('ProductDetail/{id}', [ProductDetailController::class,'find']);
-Route::get('ProductDetail/ThemMoi', [ProductDetailController::class,'create']);
-Route::get('ProductDetail/edit/{id}', [ProductDetailController::class,'edit']);
-Route::get('ProductDetail/delete/{id}', [ProductDetailController::class,'delete']);
+Route::post('ProductDetail/ThemMoi', [ProductDetailController::class,'create']);
+Route::patch('ProductDetail/edit/{id}', [ProductDetailController::class,'edit']);
+Route::delete('ProductDetail/delete/{id}', [ProductDetailController::class,'delete']);
 //Size
 Route::get('Size/DanhSach', [SizeController::class,'LayDanhSach']);
 Route::get('Size/{id}', [SizeController::class,'find']);
-Route::get('Size/ThemMoi', [SizeController::class,'create']);
-Route::get('Size/edit/{id}', [SizeController::class,'edit']);
-Route::get('Size/delete/{id}', [SizeController::class,'delete']);
+Route::post('Size/ThemMoi', [SizeController::class,'create']);
+Route::patch('Size/edit/{id}', [SizeController::class,'edit']);
+Route::delete('Size/delete/{id}', [SizeController::class,'delete']);
 //Producer
 Route::get('Producer/DanhSach', [ProducerController::class,'LayDanhSach']);
 Route::get('Producer/{id}', [ProducerController::class,'find']);
-Route::get('Producer/ThemMoi', [ProducerController::class,'create']);
-Route::get('Producer/edit/{id}', [ProducerController::class,'edit']);
-Route::get('Producer/delete/{id}', [ProducerController::class,'delete']);
+Route::post('Producer/ThemMoi', [ProducerController::class,'create']);
+Route::patch('Producer/edit/{id}', [ProducerController::class,'edit']);
+Route::delete('Producer/delete/{id}', [ProducerController::class,'delete']);
